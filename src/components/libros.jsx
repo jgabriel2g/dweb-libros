@@ -27,28 +27,13 @@ function Libros() {
               </button>
             </div>
           </div>
-          
-          <section class="cards">
-
-	      </section>
-          
-
-
-          
         </div>
       </div>
       <div style={{ backgroundColor: 'black', color: 'white', padding: '10px', textAlign: 'center', position: 'fixed', bottom: '0', width: '100%' }}>
         <p>© Mi Sitio Web. Todos los derechos reservados.</p>
       </div>
-
-
-      
     </div>
-
-    
   );
 }
-
-
 
 export default Libros;
