@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCuxAfYaWwInde9G5MrJnJWnk2i_BsO-2E",
-    authDomain: "dweb-libros.firebaseapp.com",
-    projectId: "dweb-libros",
-    storageBucket: "dweb-libros.appspot.com",
-    messagingSenderId: "925671644045",
-    appId: "1:925671644045:web:60b275a3ec82e5c2edfbc4"
+    apiKey: "AIzaSyBF__661tqB3-QDysc2PgHlKWMUZBlZDQE",
+    authDomain: "dweb-lb.firebaseapp.com",
+    projectId: "dweb-lb",
+    storageBucket: "dweb-lb.appspot.com",
+    messagingSenderId: "270704806716",
+    appId: "1:270704806716:web:cd135b06b196bc87272c39"
 };
 // Initialize Firebase
 

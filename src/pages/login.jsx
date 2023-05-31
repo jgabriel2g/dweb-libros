@@ -4,6 +4,7 @@ import { Card, Form, Button } from 'react-bootstrap';
 import { auth } from '../enviroments/enviroments.jsx'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import {useNavigate} from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Login = () => {
     const navigate = useNavigate();
@@ -31,6 +32,11 @@ const Login = () => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 console.log(errorCode, errorMessage)
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Revisa tus credenciales de acceso'
+                })
             });
     };
 

@@ -108,7 +108,7 @@ const Home = () => {
                                   {book.stock ? 'Libro disponible' : 'Libro no disponible'}
                                 </span>
                                 <button onClick={() => borrowBook(book)}>
-                                    {book.stock ? 'Marcar como no disponible' : 'Marcar como disponible'}
+                                    {book.stock ? 'Prestar libro' : 'Devolver libro'}
                                 </button>
                                 {/*<button onClick={() => deleteBook(book.id)}>Editar</button>*/}
                                 <button onClick={() => deleteBook(book.id)}>Eliminar</button>
@@ -116,42 +116,6 @@ const Home = () => {
                         ))
                     }
                 </ul>
-                <h3>Agregar Libros</h3>
-                <form onSubmit={addBook}>
-                    <input
-                        type="text"
-                        placeholder="Título"
-                        value={newBook.title}
-                        onChange={(e) =>
-                            setNewBook({ ...newBook, title: e.target.value })
-                        }
-                    />
-                    <input
-                        type="text"
-                        placeholder="Autor"
-                        value={newBook.author}
-                        onChange={(e) =>
-                            setNewBook({ ...newBook, author: e.target.value })
-                        }
-                    />
-                    <input
-                        type="text"
-                        placeholder="Descripción"
-                        value={newBook.description}
-                        onChange={(e) =>
-                            setNewBook({ ...newBook, description: e.target.value })
-                        }
-                    />
-                    <input
-                        type="text"
-                        placeholder="Año"
-                        value={newBook.year}
-                        onChange={(e) =>
-                            setNewBook({ ...newBook, year: e.target.value })
-                        }
-                    />
-                    <button type="submit">Agregar</button>
-                </form>
             </div>
             <Footer/>
         </React.Fragment>
